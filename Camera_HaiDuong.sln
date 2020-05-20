@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camera_HaiDuong", "Camera_HaiDuong\Camera_HaiDuong.csproj", "{7A025005-A726-4295-AC5A-9035436EADFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{C9B1014C-8072-4736-B3F5-D5AE559D1E40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{FE4CEEFE-8342-471E-8DA8-3345E96E0B7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A025005-A726-4295-AC5A-9035436EADFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A025005-A726-4295-AC5A-9035436EADFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A025005-A726-4295-AC5A-9035436EADFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A025005-A726-4295-AC5A-9035436EADFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9B1014C-8072-4736-B3F5-D5AE559D1E40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9B1014C-8072-4736-B3F5-D5AE559D1E40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9B1014C-8072-4736-B3F5-D5AE559D1E40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9B1014C-8072-4736-B3F5-D5AE559D1E40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE4CEEFE-8342-471E-8DA8-3345E96E0B7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE4CEEFE-8342-471E-8DA8-3345E96E0B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE4CEEFE-8342-471E-8DA8-3345E96E0B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE4CEEFE-8342-471E-8DA8-3345E96E0B7C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6AD4A2D-B6F2-44F3-A0DD-7838619D485C}
+	EndGlobalSection
+EndGlobal

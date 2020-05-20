@@ -1,0 +1,510 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Camera_HaiDuong.Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Hưng Phát JSC</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- MetisMenu CSS -->
+    <link href="/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link href="/dist/css/sb-admin-2.css" rel="stylesheet" />
+    <link href="/dist/css/style.css" rel="stylesheet" />
+
+    <link href="/dist/css/animate.css" rel="stylesheet" />
+
+    <!-- Custom Fonts -->
+    <link href="/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/js/jssor.slider.mini.js"></script>
+
+    <link rel="shortcut icon" href="/img/Graphic1.jpg" />
+
+    <style>
+        #order-info, #ship-info {
+            display: none;
+        }
+
+        .send-order {
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+    <form id="frmMain" runat="server">
+        <div class="loader"></div>
+        <header>
+            <div class="container-fluid clearfix">
+                <div class="hp-mainbox">
+                    <div class="row">
+                        <a class="header-hotline" href="tel:18006601">
+                            <p>Hỗ trợ<strong>&nbsp;PhoneTestNumber</strong></p>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <%--<div class="top-header clearfix">
+                            <a href="/" class="logo">
+                                <img src="/img/0.png" />
+                            </a>
+                        </div>--%>
+                        <div class="top-sitename" style: margin-left:20px;>
+                            <a href="/">
+                                <img src="/img/sitename.png" />
+                            </a>
+                        </div>
+                        <div class="top-promotion">
+                            <a href="/">
+                                <img src="/img/7117header.png" />
+                            </a>
+                        </div>
+                        <div class="search-box">
+                            <input type="text" id="txtKwFull" name="txtKwFull" class="search-text-box keyword" placeholder="Bạn muốn tìm gì?" />
+                            <a id="btnSearch" class="submit search-button search-button-btn"><i class='glyphicon glyphicon-search'></i></a>
+                            <script>
+                                $('#btnSearch').on('click', function () {
+                                    window.location = '/tim-kiem/' + $('#txtKwFull').val();
+                                });
+                                $('#txtKwFull').keypress(function (e) {
+                                    var key = e.which;
+                                    if (key == 13)  // the enter key code
+                                    {
+                                        $('#btnSearch')[0].click();
+                                        return false;
+                                    }
+                                });
+                            </script>
+                        </div>
+                        <div class="menu clearfix">
+                            <ul class="right">
+                                <li>
+                                    <a href='/p/gioi-thieu-1'>
+                                        <span>
+                                            <label><i class='fa fa-info-circle fa-2x'></i></label>
+                                        </span>
+                                        <label>Giới thiệu</label>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/khuyen-mai'>
+                                        <span>
+                                            <label><i class='fa fa-gavel fa-2x'></i></label>
+                                        </span>
+                                        <label>Khuyến mại</label>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/danh-sach-bai-viet/tin-khuyen-mai-3'>
+                                        <span>
+                                            <label><i class='fa fa-envelope-o fa-2x'></i></label>
+                                        </span>
+                                        <label>Tin tức</label>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/p/lien-he-1018'>
+                                        <span>
+                                            <label><i class='fa fa-comments-o fa-2x'></i></label>
+                                        </span>
+                                        <label>Liên hệ</label>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/gio-hang'>
+                                        <span>
+                                            <label><i class='fa fa-shopping-cart fa-2x'></i></label>
+                                        </span>
+                                        <label>Giỏ hàng</label>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="menuHeader">
+            <a id="m-nav"><i class="icons m-nav-list-icon"></i></a>
+            <a href="/" class="logo">
+                <img src="/img/0.png" />
+            </a>
+            <div class="search-box">
+                <input type="text" id="txtKwMini" name="txtKwMini" class="search-text-box keyword" placeholder="Bạn muốn tìm gì?" />
+                <a id="btnSearchMini" class="submit search-button search-button-btn"><i class='glyphicon glyphicon-search'></i></a>
+                <script>
+                    $('#btnSearchMini').on('click', function () {
+                        window.location = '/tim-kiem/' + $('#txtKwMini').val();
+                    });
+                    $('#txtKwMini').keypress(function (e) {
+                        var key = e.which;
+                        if (key == 13)  // the enter key code
+                        {
+                            $('#btnSearchMini')[0].click();
+                            return false;
+                        }
+                    });
+                </script>
+            </div>
+           <%-- <div class="header-hotline">
+                <a href="tel:18006601">
+                    <p>Hotline miễn phí</p>
+                    <p><i class="icons red-phone-icon"></i><strong>&nbsp;03203.832.888</strong></p>
+                </a>
+            </div>--%>
+        </div>
+
+        <div id="menuWrapper" class="">
+            <div id="menuBox">
+                <div id="scroller" style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+                    <ul id="menu">
+                        <li>
+                            <a href='/p/gioi-thieu-1'>
+                                <span>
+                                    <label><i class='fa fa-info-circle fa-2x'></i></label>
+                                </span>
+                                <label>Giới thiệu</label>
+                            </a>
+                        </li>
+                        <asp:Repeater ID="rptMenuWrapper" runat="server">
+                            <ItemTemplate>
+                                <li>
+                                    <a href='/danh-sach-san-pham/<%# Camera_HaiDuong.Tools.convertToUnSign(Eval("CateName").ToString()) %>-<%# Eval("CateID") %>'>
+                                        <span>
+                                            <label><i class='<%# Eval("Icon") %> fa-2x'></i></label>
+                                        </span>
+                                        <label><%# Eval("CateName") %></label>
+                                    </a>
+                                </li>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                        <li>
+                            <a href='/khuyen-mai'>
+                                <span>
+                                    <label><i class='fa fa-gavel fa-2x'></i></label>
+                                </span>
+                                <label>Khuyến mại</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href='/danh-sach-bai-viet/tin-khuyen-mai-3'>
+                                <span>
+                                    <label><i class='fa fa-envelope-o fa-2x'></i></label>
+                                </span>
+                                <label>Tin tức</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href='/p/lien-he-1018'>
+                                <span>
+                                    <label><i class='fa fa-comments-o fa-2x'></i></label>
+                                </span>
+                                <label>Liên hệ</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href='/gio-hang'>
+                                <span>
+                                    <label><i class='fa fa-shopping-cart fa-2x'></i></label>
+                                </span>
+                                <label>Giỏ hàng</label>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="main">
+            <div class="container-fluid">
+                <div class="hp-mainbox">
+                    <div class="row">
+                        <div class="menu_box">
+                            <div class="menu_title">
+                                <p>Danh mục sản phẩm <i class="fa fa-caret-down"></i></p>
+                            </div>
+                            <%--<div class="menu_right">
+                                <span class="light_m"></span>
+                                <a href="/khuyen-mai">
+                                    <img src="/img/5140khuyenmai-btn.png" alt="Khuyến mại" /></a>
+                                <div>
+                                    <p><i class="fa fa-mobile-phone"></i><span>BÁN HÀNG ONLINE: <strong>03203.832.888</strong></span></p>
+                                    <span class="light_m"></span>
+                                    <a class="iframe" href="/site/Support">LIVE CHAT<img src="/img/yahoo-icon.png" alt="Hỗ trợ tư vấn bán hàng Camera Hưng Phát: 03203.832.888" /></a>
+                                </div>
+                            </div>--%>
+                            <br class="clb" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!--slider box-->
+                        <div class="hp-bntopmain clearfix">
+                            <div class="f-slright">
+                                <ul class="main_menu">
+                                    <asp:Repeater ID="rptSupplier" runat="server" OnItemDataBound="rptSupplier_ItemDataBound">
+                                        <ItemTemplate>
+                                            <asp:HiddenField ID="hdSupplierID" Value='<%# Eval("CateID") %>' runat="server" />
+                                            <li>
+                                                <i class='<%# Eval("Icon") %>'></i>
+                                                <a href='/danh-sach-san-pham/<%# Camera_HaiDuong.Tools.convertToUnSign(Eval("CateName").ToString()) %>-<%# Eval("CateID") %>'><%# Eval("CateName") %><span><%# Eval("CateName") %></span><i class="fa fa-angle-right"></i></a>
+                                                <div>
+                                                    <asp:Repeater ID="rptCateParents" runat="server" OnItemDataBound="rptCateParents_ItemDataBound">
+                                                        <ItemTemplate>
+                                                            <asp:HiddenField ID="hdCateParentsID" Value='<%# Eval("CateID") %>' runat="server" />
+                                                            <ul>
+                                                                <li><strong><%# Eval("CateName") %></strong></li>
+                                                                <asp:Repeater ID="rptCateChilds" runat="server">
+                                                                    <ItemTemplate>
+                                                                        <li><a href='/danh-sach-san-pham/<%# Camera_HaiDuong.Tools.convertToUnSign(Eval("CateName").ToString()) %>-<%# Eval("CateID") %>'><%# Eval("CateName") %></a></li>
+                                                                    </ItemTemplate>
+                                                                </asp:Repeater>
+                                                            </ul>
+                                                        </ItemTemplate>
+                                                    </asp:Repeater>
+                                                    <br class="cll">
+                                                </div>
+                                            </li>
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+                                </ul>
+                            </div>
+                            <div class="f-slleft">
+                                <div id="slider1_container" style="position: relative; width: 960px; height: 450px; overflow: hidden; margin: 0 auto">
+                                    <script>
+                                        jQuery(document).ready(function ($) {
+                                            var options = {
+                                                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                                                $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                                                $SlideDuration: 500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                                                $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+                                                $UISearchMode: 0,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+
+                                                $ThumbnailNavigatorOptions: {
+                                                    $Class: $JssorThumbnailNavigator$,              //[Required] Class to create thumbnail navigator instance
+                                                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+
+                                                    $Loop: 1,                                       //[Optional] Enable loop(circular) of carousel or not, 0: stop, 1: loop, 2 rewind, default value is 1
+                                                    $SpacingX: 3,                                   //[Optional] Horizontal space between each thumbnail in pixel, default value is 0
+                                                    $SpacingY: 3,                                   //[Optional] Vertical space between each thumbnail in pixel, default value is 0
+                                                    $DisplayPieces: 6,                              //[Optional] Number of pieces to display, default value is 1
+                                                    $ParkingPosition: 253,                          //[Optional] The offset position to park thumbnail,
+
+                                                    $ArrowNavigatorOptions: {
+                                                        $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+                                                        $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                                                        $AutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                                                        $Steps: 6                                       //[Optional] Steps to go for each navigation request, default value is 1
+                                                    }
+                                                }
+                                            };
+
+                                            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+                                            //responsive code begin
+                                            //you can remove responsive code if you don't want the slider scales while window resizes
+                                            function ScaleSlider() {
+                                                var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+                                                if (parentWidth)
+                                                    jssor_slider1.$ScaleWidth(Math.min(parentWidth, 960));
+                                                else
+                                                    window.setTimeout(ScaleSlider, 30);
+                                            }
+                                            ScaleSlider();
+
+                                            $(window).bind("load", ScaleSlider);
+                                            $(window).bind("resize", ScaleSlider);
+                                            $(window).bind("orientationchange", ScaleSlider);
+                                            //responsive code end
+                                        });
+                                    </script>
+                                    <!-- Loading Screen -->
+                                    <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+                                        <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; background-color: #000; top: 0px; left: 0px; width: 100%; height: 100%;">
+                                        </div>
+                                        <div style="position: absolute; display: block; background: url(/img/loading.gif) no-repeat center center; top: 0px; left: 0px; width: 100%; height: 100%;">
+                                        </div>
+                                    </div>
+
+                                    <!-- Slides Container -->
+                                    <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 960px; height: 450px; overflow: hidden;">
+                                        <asp:Repeater ID="rptSlides" runat="server">
+                                            <ItemTemplate>
+                                                <div>
+                                                    <a href='<%# Eval("Link") %>' target="_blank">
+                                                        <img u="image" src='<%# Eval("ImagePath") %>' /></a>
+                                                    <img u="thumb" src='<%# Eval("ThumbnailPath") %>' />
+                                                </div>
+                                            </ItemTemplate>
+                                        </asp:Repeater>
+                                    </div>
+                                    <div u="thumbnavigator" class="jssort07" style="width: 960px; height: 100px; left: 0px; bottom: 0px;">
+                                        <div u="slides" style="cursor: default;">
+                                            <div u="prototype" class="p">
+                                                <div u="thumbnailtemplate" class="i"></div>
+                                                <div class="o"></div>
+                                            </div>
+                                        </div>
+                                        <span u="arrowleft" class="jssora11l" style="top: 123px; left: 8px;"></span>
+                                        <span u="arrowright" class="jssora11r" style="top: 123px; right: 8px;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <asp:ContentPlaceHolder ID="phMain" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+
+        <footer class="hp-footer">
+            <div class="container-fluid">
+                <div class="hp-mainbox">
+                    <div class="hp-menu-footer">
+                        <div class="row">
+                            <div class="col-md-12 hp-mf-listmn">
+                                <div class="row">
+                                    <div class="col-xs-5 col-sm-4">
+                                        <h5 class="hp-mf-title">Tin tức</h5>
+                                        <ul class="hp-mf-news">
+                                            <asp:Repeater ID="rptCateNews" runat="server">
+                                                <ItemTemplate>
+                                                    <li><a href='/danh-sach-bai-viet/<%# Camera_HaiDuong.Tools.convertToUnSign(Eval("CateName").ToString()) %>-<%# Eval("CateID") %>' target="_blank"><%# Eval("CateName") %></a></li>
+                                                </ItemTemplate>
+                                            </asp:Repeater>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-7 col-sm-4">
+                                        <h5 class="hp-mf-title">Chính sách</h5>
+                                        <ul class="hp-mf-news">
+                                            <asp:Repeater ID="rptCS" runat="server">
+                                                <ItemTemplate>
+                                                    <li><a href='/p/<%# Camera_HaiDuong.Tools.convertToUnSign(Eval("Name").ToString()) %>-<%# Eval("ID") %>' target="_blank"><%# Eval("Name") %></a></li>
+                                                </ItemTemplate>
+                                            </asp:Repeater>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4">
+                                        <h5 class="hp-mf-title">Dịch vụ &amp; Hỗ trợ</h5>
+                                        <ul class="hp-mf-news">
+                                            <asp:Repeater ID="rptSeviceAndSupport" runat="server">
+                                                <ItemTemplate>
+                                                    <li><a href='/p/<%# Camera_HaiDuong.Tools.convertToUnSign(Eval("Name").ToString()) %>-<%# Eval("ID") %>' target="_blank"><%# Eval("Name") %></a></li>
+                                                </ItemTemplate>
+                                            </asp:Repeater>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>                  
+                </div>
+            </div>
+        </footer>
+
+        <div class="modal fade" id="onlineSupport" tabindex="-1" role="dialog" aria-labelledby="onlineSupportLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title" id="onlineSupportLabel">Hỗ trợ trực tuyến</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <asp:Repeater ID="rptOnlineSupport" runat="server">
+                                <ItemTemplate>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <span class="nick">
+                                                <a>
+                                                    <img border="0" src="/img/online.gif" /><%# Eval("Name") %>
+                                                </a>
+                                            </span>
+                                            <span class="nick">
+                                                <a href='<%# Eval("SkypeUrl") %>'>
+                                                    <img src="/img/skype-add.png" />
+                                                    <strong><%# Eval("SkypeNumber") %></strong>
+                                                </a>
+                                            </span>
+                                            <img class="imgLiveChat" src='<%# Eval("AvatarPath") %>' />
+                                        </div>
+                                    </div>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+
+        <div class="modal fade" id="onlineSupportTech" tabindex="-1" role="dialog" aria-labelledby="onlineSupportTechLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title" id="onlineSupportLabelTech">Hỗ trợ trực tuyến</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <asp:Repeater ID="rptOnlineSupportTech" runat="server">
+                                <ItemTemplate>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <span class="nick">
+                                                <a>
+                                                    <img border="0" src="/img/online.gif" /><%# Eval("Name") %>
+                                                </a>
+                                            </span>
+                                            <span class="nick">
+                                                <a href='<%# Eval("SkypeUrl") %>'>
+                                                    <img src="/img/skype-add.png" />
+                                                    <strong><%# Eval("SkypeNumber") %></strong>
+                                                </a>
+                                            </span>
+                                            <img class="imgLiveChat" src='<%# Eval("AvatarPath") %>' />
+                                        </div>
+                                    </div>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+
+        <a href="#" id="back-to-top" title="Lên đầu trang">&uarr;</a>
+
+        <div class="shadow_menu"></div>
+
+        <!-- jQuery -->
+        <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <!-- Metis Menu Plugin JavaScript -->
+        <script src="/bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="/dist/js/custome.js"></script>
+        <script src="/dist/js/sb-admin-2.js"></script>
+        <script src="/js/bootbox.js"></script>
+
+    </form>
+</body>
+</html>

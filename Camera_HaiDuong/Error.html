@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Không tìm thấy trang</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css">
+    <!--<link rel="stylesheet" href="https://daneden.github.io/animate.css/style.css">-->
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <style>
+        html {
+            font: 100%/1.5 "Roboto", Verdana, sans-serif;
+            color: #3d464d;
+            background-color: #fff;
+            -webkit-font-smoothing: antialiased;
+            width: 100%;
+            overflow: hidden-x;
+            text-align: center;
+        }
+
+        h1, .alpha {
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            font-size: 3rem;
+            font-weight: 100;
+            line-height: 1;
+            letter-spacing: -.05em;
+        }
+
+        @media (min-width: 650px) {
+            body {
+                display: inline-block;
+                vertical-align: middle;
+                max-width: 58rem;
+            }
+
+            .mega {
+                font-size: 7rem;
+                line-height: 1;
+                letter-spacing: 5px;
+            }
+        }
+
+        .site__header {
+            -webkit-animation: bounceInUp 1s;
+        }
+
+        .island {
+            padding: 1.5rem;
+        }
+
+        .wrap {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .site__title {
+            color: #f35626;
+            background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-animation: hue 60s infinite linear;
+        }
+
+        .subhead, .meta {
+            font-size: 2rem;
+            color: #7b8993;
+        }
+
+            .subhead a {
+                font-weight: bold;
+                text-decoration: none;
+                color: #0000ff;
+                background-image: -webkit-linear-gradient(92deg,#0000ff,#feab3a);
+                -webkit-background-clip: text;
+                -webkit-animation: hue 60s infinite linear;
+            }
+
+                .subhead a:hover {
+                    color: #ff0000;
+                }
+
+        hr {
+            border: none;
+            margin-top: -1px;
+            height: 1px;
+            background-color: #c0c8c9;
+            background-image: -webkit-linear-gradient(0deg, #fff, #c0c8c9, #fff);
+        }
+
+        @-webkit-keyframes hue {
+            from {
+                -webkit-filter: hue-rotate(0deg);
+            }
+
+            to {
+                -webkit-filter: hue-rotate(-360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site__header island">
+        <div class="wrap">
+            <span class="beta subhead">CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ DỊCH VỤ</span>
+            <span id="animationSandbox" style="display: block;" class=""><h1 class="site__title mega">HƯNG PHÁT</h1></span>
+            <hr />
+            <span class="beta subhead">Không tìm thấy trang bạn yêu cầu!</span><br />
+            <span class="beta subhead">Vui lòng quay lại <a href="/">Trang chủ</a></span>
+        </div>
+    </header>
+    <script>
+        function testAnim(x) {
+            $('#animationSandbox').removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+                $(this).removeClass();
+            });
+        };
+
+        $(document).ready(function () {
+            $('.js--triggerAnimation').click(function (e) {
+                e.preventDefault();
+                var anim = $('.js--animations').val();
+                testAnim(anim);
+            });
+
+            $('.js--animations').change(function () {
+                var anim = $(this).val();
+                testAnim(anim);
+            });
+        });
+
+    </script>
+</body>
+</html>
