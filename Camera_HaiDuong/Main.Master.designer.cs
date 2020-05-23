@@ -33,24 +33,6 @@ namespace Camera_HaiDuong
         protected global::System.Web.UI.WebControls.Repeater rptMenuWrapper;
 
         /// <summary>
-        /// rptSupplier control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptSupplier;
-
-        /// <summary>
-        /// rptSlides control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptSlides;
-
-        /// <summary>
         /// phMain control.
         /// </summary>
         /// <remarks>
@@ -58,50 +40,5 @@ namespace Camera_HaiDuong
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder phMain;
-
-        /// <summary>
-        /// rptCateNews control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptCateNews;
-
-        /// <summary>
-        /// rptCS control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptCS;
-
-        /// <summary>
-        /// rptSeviceAndSupport control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptSeviceAndSupport;
-
-        /// <summary>
-        /// rptOnlineSupport control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptOnlineSupport;
-
-        /// <summary>
-        /// rptOnlineSupportTech control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptOnlineSupportTech;
     }
 }

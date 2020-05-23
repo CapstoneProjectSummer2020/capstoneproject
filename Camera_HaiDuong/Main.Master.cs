@@ -20,22 +20,22 @@ namespace Camera_HaiDuong
         {
             if (!IsPostBack)
             {
-                rptCateNews.DataSource = ncateBLL.GetAllNewsCate();
-                rptCateNews.DataBind();
-                rptSupplier.DataSource = pcateBLL.GetAllCateParents();
-                rptSupplier.DataBind();
+                //rptCateNews.DataSource = ncateBLL.GetAllNewsCate();
+                //rptCateNews.DataBind();
+                //rptSupplier.DataSource = pcateBLL.GetAllCateParents();
+                //rptSupplier.DataBind();
                 rptMenuWrapper.DataSource = pcateBLL.GetAllCateParents();
                 rptMenuWrapper.DataBind();
-                rptCS.DataSource = othBLL.GetPagesByParentsID(2);
-                rptCS.DataBind();
-                rptSeviceAndSupport.DataSource = othBLL.GetPagesByParentsID(8);
-                rptSeviceAndSupport.DataBind();
-                rptSlides.DataSource = sldBLL.GetAvailableSlides();
-                rptSlides.DataBind();
-                rptOnlineSupport.DataSource = spBLL.GetOnlineSupport();
-                rptOnlineSupport.DataBind();
-                rptOnlineSupportTech.DataSource = spBLL.GetOnlineSupportTech();
-                rptOnlineSupportTech.DataBind();
+                //rptCS.DataSource = othBLL.GetPagesByParentsID(2);
+                //rptCS.DataBind();
+                //rptSeviceAndSupport.DataSource = othBLL.GetPagesByParentsID(8);
+                //rptSeviceAndSupport.DataBind();
+                //rptSlides.DataSource = sldBLL.GetAvailableSlides();
+                //rptSlides.DataBind();
+                //rptOnlineSupport.DataSource = spBLL.GetOnlineSupport();
+                //rptOnlineSupport.DataBind();
+                //rptOnlineSupportTech.DataSource = spBLL.GetOnlineSupportTech();
+                //rptOnlineSupportTech.DataBind();
             }
         }
 

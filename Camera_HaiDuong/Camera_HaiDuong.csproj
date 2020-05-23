@@ -2520,8 +2520,22 @@
     <Content Include="bower_components\morrisjs\spec\viz\run.sh" />
     <Content Include="bower_components\raphael\.bower.json" />
     <Content Include="bower_components\raphael\bower.json" />
+    <Content Include="css\default.css" />
+    <Content Include="css\etalage.css" />
+    <Content Include="css\form.css" />
+    <Content Include="css\fwslider.css" />
+    <Content Include="css\magnific-popup.css" />
+    <Content Include="css\megamenu.css" />
+    <Content Include="css\nivo-slider.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\zoome-min.css" />
     <Content Include="Default.aspx" />
     <Content Include="dist\css\animate.css" />
+    <Content Include="dist\css\sb-admin-2.css" />
+    <Content Include="dist\css\style.css" />
+    <Content Include="dist\css\timeline.css" />
+    <Content Include="dist\js\custome.js" />
+    <Content Include="dist\js\sb-admin-2.js" />
     <Content Include="Error.html" />
     <Content Include="img\0.png" />
     <Content Include="img\2x60.png" />
@@ -2546,6 +2560,20 @@
     <Content Include="img\skype-add.png" />
     <Content Include="img\yahoo-icon.png" />
     <Content Include="js\bootbox.js" />
+    <Content Include="js\css3-mediaqueries.js" />
+    <Content Include="js\fwslider.js" />
+    <Content Include="js\jquery-ui.min.js" />
+    <Content Include="js\jquery.easydropdown.js" />
+    <Content Include="js\jquery.etalage.min.js" />
+    <Content Include="js\jquery.flexisel.js" />
+    <Content Include="js\jquery.jscrollpane.min.js" />
+    <Content Include="js\jquery.magnific-popup.js" />
+    <Content Include="js\jquery.nivo.slider.js" />
+    <Content Include="js\jquery1.min.js" />
+    <Content Include="js\login.js" />
+    <Content Include="js\megamenu.js" />
+    <Content Include="js\slides.min.jquery.js" />
+    <Content Include="js\zoome-e.js" />
     <Content Include="less\mixins.less" />
     <Content Include="less\sb-admin-2.less" />
     <Content Include="less\variables.less" />
@@ -2703,11 +2731,6 @@
     <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="dist\css\sb-admin-2.css" />
-    <Content Include="dist\css\style.css" />
-    <Content Include="dist\css\timeline.css" />
-    <Content Include="dist\js\custome.js" />
-    <Content Include="dist\js\sb-admin-2.js" />
     <Content Include="Global.asax" />
     <Content Include="img\0x60.png" />
     <Content Include="img\1173camera mhg.jpg" />
