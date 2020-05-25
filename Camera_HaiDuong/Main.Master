@@ -43,7 +43,7 @@
                 <div class="header-bottom-left">
                     <div class="logo">
                         <a href="Default.aspx">
-                            <img src="img/logo-hp.png" alt="" /></a>
+                            <img src="img/screenshot.png" alt="" /></a>
                     </div>
                     <div class="menu" style="min-width: 360px;">
                         <ul class="megamenu skyblue">
@@ -109,16 +109,16 @@
             <div class="slider_container">
                 <div class="slide">
                     <!-- Slide image -->
-                    <img src="img/banner.jpg" alt="" />
+                    <img src="img/banner-1200x350-lap-camera.png" alt="" />
                     <!-- /Slide image -->
                     <!-- Texts container -->
                     <div class="slide_content">
                         <div class="slide_content_wrap">
                             <!-- Text title -->
-                            <h4 class="title">Aluminium Club</h4>
+                            <h4 class="title">Lắp Camera</h4>
                             <!-- /Text title -->
                             <!-- Text description -->
-                            <p class="description">Experiance ray ban</p>
+                            <p class="description">Chuẩn-không-cần-chỉnh</p>
                             <!-- /Text description -->
                         </div>
                     </div>
@@ -126,11 +126,20 @@
                 </div>
                 <!-- /Duplicate to create more slides -->
                 <div class="slide">
-                    <img src="img/banner1.jpg" alt="" />
+                    <img src="img/banner-1200x350-lap-camera.png" alt="" />
                     <div class="slide_content">
                         <div class="slide_content_wrap">
-                            <h4 class="title">consectetuer adipiscing </h4>
-                            <p class="description">diam nonummy nibh euismod</p>
+                            <h4 class="title">Lắp camera </h4>
+                            <p class="description">uy tín-xịn-sò</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/banner-camera-1140x420.jpg" alt="" />
+                    <div class="slide_content">
+                        <div class="slide_content_wrap">
+                            <h4 class="title">Lắp camera </h4>
+                            <p class="description">chất lượng tuyệt tối</p>
                         </div>
                     </div>
                 </div>
@@ -153,14 +162,14 @@
                         <div class="col_1_of_2 span_1_of_2">
                             <ul class="f-list">
                                 <li>
-                                    <img src="img/2.png"><span class="f-text">Free Shipping on orders over $ 100</span><div class="clear"></div>
+                                    <img src="img/2.png"><span class="f-text">Free Shipping on orders over $1000</span><div class="clear"></div>
                                 </li>
                             </ul>
                         </div>
                         <div class="col_1_of_2 span_1_of_2">
                             <ul class="f-list">
                                 <li>
-                                    <img src="img/3.png"><span class="f-text">Call us! toll free-222-555-6666 </span>
+                                    <img src="img/3.png"><span class="f-text">Call us! toll free-0963-408-267 </span>
                                     <div class="clear"></div>
                                 </li>
                             </ul>
@@ -251,42 +260,8 @@
 
                     <div class="section group example">
                         <div class="col_1_of_f_1 span_1_of_f_1">
-                            <div class="section group example">
-                                <div class="col_1_of_f_2 span_1_of_f_2">
-                                    <h3>Facebook</h3>
-                                    <script>
-                                        (function (d, s, id) {
-                                            var js, fjs = d.getElementsByTagName(s)[0];
-                                            if (d.getElementById(id)) return;
-                                            js = d.createElement(s); js.id = id;
-                                            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-                                            fjs.parentNode.insertBefore(js, fjs);
-                                        }(document, 'script', 'facebook-jssdk'));</script>
-                                    <div class="like_box">
-                                        <div class="fb-like-box" data-href="https://www.facebook.com/anhvietdo.998" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
-                                    </div>
-                                </div>
-                                <div class="col_1_of_f_2 span_1_of_f_2">
-                                    <h3>From Twitter</h3>
-                                    <div class="recent-tweet">
-                                        <div class="recent-tweet-icon">
-                                            <span></span>
-                                        </div>
-                                        <div class="recent-tweet-info">
-                                            <p>Ds which don't look even slightly believable. If you are <a href="#">going to use nibh euismod</a> tincidunt ut laoreet adipisicing</p>
-                                        </div>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <div class="recent-tweet">
-                                        <div class="recent-tweet-icon">
-                                            <span></span>
-                                        </div>
-                                        <div class="recent-tweet-info">
-                                            <p>Ds which don't look even slightly believable. If you are <a href="#">going to use nibh euismod</a> tincidunt ut laoreet adipisicing</p>
-                                        </div>
-                                        <div class="clear"></div>
-                                    </div>
-                                </div>
+                            <div class="section group example">                              
+                              
                                 <div class="clear"></div>
                             </div>
                         </div>
@@ -295,23 +270,21 @@
                                 <div class="col_1_of_f_2 span_1_of_f_2">
                                     <h3>Information</h3>
                                     <ul class="f-list1">
-                                        <li><a href="#">Duis autem vel eum iriure </a></li>
-                                        <li><a href="#">anteposuerit litterarum formas </a></li>
-                                        <li><a href="#">Tduis dolore te feugait nulla</a></li>
-                                        <li><a href="#">Duis autem vel eum iriure </a></li>
-                                        <li><a href="#">anteposuerit litterarum formas </a></li>
-                                        <li><a href="#">Tduis dolore te feugait nulla</a></li>
+                                        <li><a href="#">Nhanh chóng - kịp thời </a></li>
+                                        <li><a href="#">Uy tín - chất lượng </a></li>
+                                        <li><a href="#">Tối ưu giá cho khách hàng</a></li>
+                                        <li><a href="#">Website for capstone only</a></li>
+                                        <li><a href="#">Làm website này bằng cả con tim </a></li>
+                                        <li><a href="#">Công nghệ được cập nhật liên tục</a></li>
                                     </ul>
                                 </div>
                                 <div class="col_1_of_f_2 span_1_of_f_2">
                                     <h3>Contact us</h3>
                                     <div class="company_address">
-                                        <p>500 Lorem Ipsum Dolor Sit,</p>
-                                        <p>22-56-2-9 Sit Amet, Lorem,</p>
-                                        <p>USA</p>
-                                        <p>Phone:(00) 222 666 444</p>
-                                        <p>Fax: (000) 000 00 00 0</p>
-                                        <p>Email: <span>mail[at]leoshop.com</span></p>
+                                        <p>Lô E2a-7, Đường D1 Khu Công nghệ cao,</p>
+                                        <p>P.Long Thạnh Mỹ, Quận 9, Tp.Hồ Chí Minh </p>
+                                        <p>Phone:(+84) 0963-408-267</p>
+                                        <p>Email: <span>donpin6281@gmail.com</span></p>
 
                                     </div>
                                     <div class="social-media">
