@@ -26,11 +26,12 @@ namespace DAL.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=Camera_Store;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost; Initial Catalog=Camera_Store; User ID=sa; Password=123456;")]
         public string Camera_StoreConnectionString {
             get {
                 return ((string)(this["Camera_StoreConnectionString"]));
             }
         }
     }
+     
 }
